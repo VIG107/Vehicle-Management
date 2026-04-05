@@ -154,3 +154,5 @@ if selected_car:
                 st.error(f"⚠️ Found '{image_filename}', but it appears corrupted.")
         else:
             st.warning("🖼️ No image available for this vehicle.")
+            # Add this line to see EXACTLY what it is searching for:
+            st.code(f"Looking for exactly: '{image_filename}'")
